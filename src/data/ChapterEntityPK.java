@@ -6,7 +6,11 @@ import java.io.Serializable;
 import java.util.Objects;
 
 public class ChapterEntityPK implements Serializable {
-    private String bookIsbn;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 2668334512087602725L;
+	private String bookIsbn;
     private int chapterNum;
 
     @Column(name = "BOOK_ISBN")
